@@ -23,7 +23,6 @@
         aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -35,7 +34,6 @@
         </ul>
       </div>
     </nav>
-
     <div class="formbold-main-wrapper">
       <!-- Author: FormBold Team -->
       <!-- Learn More: https://formbold.com -->
@@ -53,7 +51,6 @@
                 class="formbold-form-input" />
             </div>
           </div>
-
           <div class="w-full sm:w-half formbold-px-3">
             <div class="formbold-mb-5">
               <label for="Category" class="formbold-form-label">Date</label>
@@ -65,7 +62,6 @@
             </div>
 
           </div>
-
           <div class="w-full sm:w-full formbold-px-12" id="tableContainer">
             <table class="table" id="myTable">
               <thead>
@@ -81,9 +77,7 @@
                     <button id="addRecordBtn" type="button" style="border: none; background: none;">
                       <img src="add.png" alt="Add Record" width="30" height="30">
                     </button>
-
                   </th>
-
                 </tr>
               </thead>
               <tbody id="tableBody">
@@ -98,38 +92,28 @@
                   <td><button id="deleteRowBtn" type="button" style="border: none; background: none;">
                       <img src="delete.png" alt="Add Record" width="30" height="30">
                     </button></td>
-
-
                 </tr>
               </tbody>
             </table>
-
           </div>
-
           <div class="w-full formbold-px-3">
-
           </div>
-
         </form>
       </div>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
     <script>
       $(document).ready(function () {
         // Initialize Dropify
         $(".dropify").dropify();
-
         // Add record to table body when add button is clicked
-       $("#addRecordBtn").click(function () {
+        $("#addRecordBtn").click(function () {
           var newRow = "<tr><td contenteditable='true'>New Product</td><td contenteditable='true'>1</td><td>100</td><td>yes</td><td>10</td><td>110</td><td>110</td><td><button id=\"deleteRowBtn\" type=\"button\" style=\"border: none; background: none;\"><img src=\"delete.png\" alt=\"Delete Record\" width=\"30\" height=\"30\"></button></td></tr>";
           $("#tableBody").append(newRow);
         });
-
-
         // Delete record when delete button is clicked
-       $(document).on("click", "#deleteRowBtn", function () {
+        $(document).on("click", "#deleteRowBtn", function () {
           // Code to delete the row
           $(this).closest("tr").remove(); // Removes the closest row to the clicked button
         });
