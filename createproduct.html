@@ -5,39 +5,35 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Product Entry Form</title>
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css" />
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css" />
     </head>
 
     <body>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Sales App</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
-            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <a class="navbar-brand" href="#">Sales App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExample04">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Create <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sales</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Create <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sales</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <div class="formbold-main-wrapper">
-            <!-- Author: FormBold Team -->
+
             <!-- Learn More: https://formbold.com -->
             <div class="formbold-form-wrapper">
-                
                 <form action="https://formbold.com/s/FORM_ID" method="POST" class="flex flex-wrap">
                     <div class="w-full sm:w-half formbold-px-3">
                         <div class="formbold-mb-5">
@@ -49,32 +45,35 @@
                         <div class="formbold-mb-5">
                             <label for="Category" class="formbold-form-label">Category</label>
                             <select name="Category" id="Category" class="formbold-form-input">
-                                <option value="" disabled selected >Select Category</option>
+                                <option value disabled selected>Select Category</option>
                                 <option value="Foods">Foods</option>
                             </select>
                         </div>
 
                         <div class="formbold-mb-5">
                             <label for="tax_type" class="formbold-form-label">Select Image</label>
-                            <input type="file" id="input-file-now" class="dropify"  data-allowed-file-extensions="jpg jpeg png gif"  data-show-remove="false" data-max-file-size="5M" data-msg-placeholder="Custom placeholder text here" />
+                            <input type="file" id="input-file-now" class="dropify"
+                                data-allowed-file-extensions="jpg jpeg png gif" data-show-remove="false"
+                                data-max-file-size="5M" data-msg-placeholder="Custom placeholder text here" />
                         </div>
-
                     </div>
 
                     <div class="w-full sm:w-half formbold-px-3">
-
                         <div class="formbold-mb-5">
                             <label for="mrp" class="formbold-form-label">MRP</label>
-                            <input type="number" name="mrp" id="mrp" placeholder="MRP" class="formbold-form-input" min="1"/>
+                            <input type="number" name="mrp" id="mrp" placeholder="MRP" class="formbold-form-input"
+                                min="1" />
                         </div>
                         <div class="formbold-mb-5">
                             <label for="p_rate" class="formbold-form-label">Purchase Rate</label>
-                            <input type="number" name="p_rate" id="p_rate" placeholder="Purchase Rate" class="formbold-form-input" min="1"/>
+                            <input type="number" name="p_rate" id="p_rate" placeholder="Purchase Rate"
+                                class="formbold-form-input" min="1" />
                         </div>
 
                         <div class="formbold-mb-5">
                             <label for="s_rate" class="formbold-form-label">Selling Rate</label>
-                            <input type="number" name="s_rate" id="s_rate" placeholder="Selling Rate" class="formbold-form-input" min="1"/>
+                            <input type="number" name="s_rate" id="s_rate" placeholder="Selling Rate"
+                                class="formbold-form-input" min="1" />
                         </div>
 
                         <div class="formbold-mb-5">
@@ -87,14 +86,15 @@
 
                         <div class="formbold-mb-5">
                             <label for="tax_percentage" class="formbold-form-label">Tax Percentage</label>
-                            <input type="number" name="tax_percentage" id="tax_percentage" placeholder="Tax Percentage" class="formbold-form-input" min="1"/>
+                            <input type="number" name="tax_percentage" id="tax_percentage" placeholder="Tax Percentage"
+                                class="formbold-form-input" min="1" />
                         </div>
-
-
+                        <div id="createbtndiv" class="w-full formbold-px-3 text-right">
+                            <!-- Align button to the right -->
+                            <button id="btncreate" class="formbold-btn">Create Product</button>
+                        </div>
                     </div>
-                    <div class="w-full formbold-px-3">
-                        <button class="formbold-btn">Create Product</button>
-                    </div>
+
                 </form>
             </div>
         </div>

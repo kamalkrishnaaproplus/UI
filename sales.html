@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sales Entry Form</title>
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css"
-    />
+    <title>Product Entry Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css" />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .formbold-btn {
+        margin-bottom: 10px;
+        /* Add margin to separate the button from the table */
+      }
+    </style>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Sales App</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarsExample04"
-        aria-controls="navbarsExample04"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Create <span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="#">Create <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sales</a>
@@ -48,121 +40,76 @@
       <!-- Author: FormBold Team -->
       <!-- Learn More: https://formbold.com -->
       <div class="formbold-form-wrapper">
-        <form
-          action="https://formbold.com/s/FORM_ID"
-          method="POST"
-          class="flex flex-wrap"
-        >
+        <form action="https://formbold.com/s/FORM_ID" method="POST" class="flex flex-wrap">
           <div class="w-full sm:w-half formbold-px-3">
             <div class="formbold-mb-5">
-              <label for="tran_no" class="formbold-form-label"
-                >Transaction Number</label
-              >
-              <input
-                type="text"
-                name="tran_no"
-                id="tran_no"
-                placeholder="Transaction Number"
-                class="formbold-form-input"
-              />
+              <label for="product_name" class="formbold-form-label">Invoice Number</label>
+              <input type="text" name="invoice_number" id="invoice_number" placeholder="Invoice Number"
+                class="formbold-form-input" />
             </div>
             <div class="formbold-mb-5">
-              <label for="tran_date" class="formbold-form-label"
-                >Transaction Date</label
-              >
-              <input
-                type="date"
-                name="tran_date"
-                id="tran_date"
-                class="formbold-form-input"
-              />
-            </div>
-            <div class="formbold-mb-5">
-              <label for="customer_name" class="formbold-form-label"
-                >Customer Name</label
-              >
-              <input
-                type="text"
-                name="customer_name"
-                id="customer_name"
-                placeholder="Customer Name"
-                class="formbold-form-input"
-              />
-            </div>
-            <div class="formbold-mb-5">
-              <label for="email" class="formbold-form-label">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                class="formbold-form-input"
-              />
-            </div>
-            <div class="formbold-mb-5">
-              <label for="total_taxable" class="formbold-form-label"
-                >Total Taxable Amount</label
-              >
-              <input
-                type="number"
-                name="total_taxable"
-                id="total_taxable"
-                placeholder="Total Taxable Amount"
-                class="formbold-form-input"
-              />
-            </div>
-            <div class="formbold-mb-5">
-              <label for="total_tax" class="formbold-form-label"
-                >Total Tax Amount</label
-              >
-              <input
-                type="number"
-                name="total_tax"
-                id="total_tax"
-                placeholder="Total Tax Amount"
-                class="formbold-form-input"
-              />
-            </div>
-            <div class="formbold-mb-5">
-              <label for="total_bill" class="formbold-form-label"
-                >Total Bill Amount</label
-              >
-              <input
-                type="number"
-                name="total_bill"
-                id="total_bill"
-                placeholder="Total Bill Amount"
-                class="formbold-form-input"
-              />
+              <label for="product_name" class="formbold-form-label">Customer Name</label>
+              <input type="text" name="customer_name" id="customer_name" placeholder="Customer Name"
+                class="formbold-form-input" />
             </div>
           </div>
+
           <div class="w-full sm:w-half formbold-px-3">
-            <!-- Add product section -->
             <div class="formbold-mb-5">
-              <label class="formbold-form-label">Add Product</label>
-              <select name="product" class="formbold-form-input">
-                <option value="product1">Product 1</option>
-                <option value="product2">Product 2</option>
-                <!-- Add more options as needed -->
-              </select>
+              <label for="Category" class="formbold-form-label">Date</label>
+              <input type="date" name="date" id="date" placeholder="date" class="formbold-form-input" min="1" />
             </div>
             <div class="formbold-mb-5">
-              <label for="product_price" class="formbold-form-label"
-                >Product Price</label
-              >
-              <input
-                type="number"
-                name="product_price"
-                id="product_price"
-                placeholder="Product Price"
-                class="formbold-form-input"
-              />
+              <label for="Category" class="formbold-form-label">E-Mail</label>
+              <input type="email" name="email" id="email" placeholder="email" class="formbold-form-input" min="1" />
             </div>
-            <!-- Repeat product fields for additional products -->
+
           </div>
+
+          <div class="w-full sm:w-full formbold-px-12" id="tableContainer">
+            <table class="table" id="myTable">
+              <thead>
+                <tr>
+                  <th>Product Name</th>
+                  <th>Qty</th>
+                  <th>Price</th>
+                  <th>Taxable</th>
+                  <th>Tax %</th>
+                  <th>Tax Amount</th>
+                  <th>Total</th>
+                  <th>
+                    <button id="addRecordBtn" type="button" style="border: none; background: none;">
+                      <img src="add.png" alt="Add Record" width="30" height="30">
+                    </button>
+
+                  </th>
+
+                </tr>
+              </thead>
+              <tbody id="tableBody">
+                <tr>
+                  <td contenteditable="true">Product A</td>
+                  <td contenteditable="true">1</td>
+                  <td>100</td>
+                  <td>yes</td>
+                  <td>10</td>
+                  <td>110</td>
+                  <td>110</td>
+                  <td><button id="deleteRowBtn" type="button" style="border: none; background: none;">
+                      <img src="delete.png" alt="Add Record" width="30" height="30">
+                    </button></td>
+
+
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
           <div class="w-full formbold-px-3">
-            <button class="formbold-btn">Create Transaction</button>
+
           </div>
+
         </form>
       </div>
     </div>
@@ -173,7 +120,21 @@
       $(document).ready(function () {
         // Initialize Dropify
         $(".dropify").dropify();
+
+        // Add record to table body when add button is clicked
+       $("#addRecordBtn").click(function () {
+          var newRow = "<tr><td contenteditable='true'>New Product</td><td contenteditable='true'>1</td><td>100</td><td>yes</td><td>10</td><td>110</td><td>110</td><td><button id=\"deleteRowBtn\" type=\"button\" style=\"border: none; background: none;\"><img src=\"delete.png\" alt=\"Delete Record\" width=\"30\" height=\"30\"></button></td></tr>";
+          $("#tableBody").append(newRow);
+        });
+
+
+        // Delete record when delete button is clicked
+       $(document).on("click", "#deleteRowBtn", function () {
+          // Code to delete the row
+          $(this).closest("tr").remove(); // Removes the closest row to the clicked button
+        });
       });
     </script>
   </body>
+
 </html>

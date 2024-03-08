@@ -116,10 +116,21 @@ body {
   height: 260px;
 }
 
-.formbold-main-wrapper {
+.formbold-form-wrapper {
   border: 1px solid #ced4da; /* Add border */
   border-radius: 15px; /* Add curved border */
   padding: 20px; /* Add padding */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
+#createbtn {
+  font-size: 14px; /* Reduce font size */
+  padding: 8px 16px; /* Adjust padding as needed */
+  border-radius: 4px; /* Adjust border radius */
+  /* Adjust width if needed */
+}
+
+#btncreate {
+  text-align: center;
+  width: 100%;
+}
