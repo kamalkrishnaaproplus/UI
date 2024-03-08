@@ -116,7 +116,7 @@ body {
   height: 260px;
 }
 
-.formbold-form-wrapper {
+.container{
   border: 1px solid #ced4da; /* Add border */
   border-radius: 15px; /* Add curved border */
   padding: 20px; /* Add padding */
@@ -134,3 +134,4 @@ body {
   text-align: center;
   width: 100%;
 }
+
